@@ -1,0 +1,48 @@
+<!--
+  Simple web‑flashing page for the ESP32‑S3 New York Time Display.
+
+  This page uses ESP‑Web‑Tools to provide a one‑click firmware installer
+  directly from your browser.  To make this work you need to supply a
+  compiled firmware binary (`firmware.bin`) built from this project.
+  After compiling your sketch, copy the generated `firmware.bin` into
+  this directory and update the `url` field below to point at it.
+
+  Host this file on any static server (for example GitHub Pages) and
+  browse to it using Chrome or Edge.  The user will be prompted to
+  connect their ESP32‑S3‑LCD‑1.47B over USB and flash the firmware.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESP32‑S3 Time Display Flasher</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      max-width: 600px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>ESP32‑S3 Time Display Flasher</h1>
+  <p>
+    Click the button below to install the New York Time Display firmware on
+    your Waveshare ESP32‑S3‑LCD‑1.47B board.  You will be asked to
+    select the correct serial port when the installation begins.  Please
+    en
